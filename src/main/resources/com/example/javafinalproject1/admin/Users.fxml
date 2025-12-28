@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.admin.controller.UserController">
+    <Label text="User Management" style="-fx-font-size: 20px; -fx-padding: 10;"/>
+    <TableView fx:id="table" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" />
+            <TableColumn fx:id="colName" text="Full Name" />
+            <TableColumn fx:id="colEmail" text="Email" />
+            <TableColumn fx:id="colRole" text="Role" />
+        </columns>
+    </TableView>
+    <Button text="Delete Selected User" onAction="#deleteUser" style="-fx-background-color: red; -fx-text-fill: white;"/>
+</VBox>

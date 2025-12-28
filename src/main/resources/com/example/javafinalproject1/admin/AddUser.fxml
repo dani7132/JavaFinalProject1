@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="User Form" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <TextField fx:id="txtName" promptText="Full Name"/>
+    <TextField fx:id="txtEmail" promptText="Email"/>
+    <TextField fx:id="txtRole" promptText="Role (ADMIN/USER)"/>
+    <Button text="Save Changes" maxWidth="Infinity"/>
+</VBox>
