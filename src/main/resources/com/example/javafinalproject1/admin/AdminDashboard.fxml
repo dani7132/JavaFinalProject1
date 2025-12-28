@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER" prefWidth="300" prefHeight="250"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.admin.controller.AdminController">
+
+    <Label text="Admin Control Panel" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <Button text="Users" onAction="#openUsers" prefWidth="150"/>
+    <Button text="Routes" onAction="#openRoutes" prefWidth="150"/>
+    <Button text="Tickets" onAction="#openTickets" prefWidth="150"/>
+</VBox>

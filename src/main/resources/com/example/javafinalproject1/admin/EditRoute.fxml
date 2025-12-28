@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.admin.controller.RouteController">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Label text="Edit Route Details" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="From:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtFrom" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="To:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtTo" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtType" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Update" prefWidth="100" style="-fx-background-color: #3498db; -fx-text-fill: white;"/>
+        <Button text="Cancel" prefWidth="100" onAction="#initialize"/>
+    </HBox>
+</VBox>

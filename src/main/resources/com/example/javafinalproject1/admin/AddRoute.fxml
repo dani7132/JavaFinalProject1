@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.javafinalproject1.admin.controller.RouteController"
+          alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="From City:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="txtFrom" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="To City:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="txtTo" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Transport Type:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtType" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Button text="Submit" onAction="#handleSaveRoute" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>
