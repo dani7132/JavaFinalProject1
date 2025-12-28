@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.reservations.ReservationsController">
+
+    <VBox spacing="15" styleClass="vbox-container" maxWidth="500">
+        <Label text="Мои бронирования" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <ListView fx:id="reservationsList" prefHeight="300"/>
+
+        <Button text="Вернуться к поиску" onAction="#goToSearch" prefWidth="250"/>
+    </VBox>
+</VBox>
