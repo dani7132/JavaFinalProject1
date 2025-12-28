@@ -1,0 +1,54 @@
+/* Общий фон в стиле Apple */
+.root {
+    -fx-background-color: #F2F2F7; /* Светло-серый фон iOS */
+    -fx-font-family: "SF Pro Display", "Segoe UI", sans-serif;
+}
+
+/* Стили для кнопок (Rounded iOS Style) */
+.button {
+    -fx-background-color: #007AFF; /* Фирменный синий Apple */
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+/* Красная кнопка (Exit/Cancel) */
+.button-exit {
+    -fx-background-color: #FF3B30;
+}
+
+
+.text-field, .password-field, .combo-box, .date-picker {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #C7C7CC;
+    -fx-border-radius: 10;
+    -fx-padding: 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #007AFF;
+    -fx-border-width: 2;
+}
+
+
+.vbox-container {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+    -fx-padding: 30;
+}
+
+
+.list-view {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color: white;
+}
