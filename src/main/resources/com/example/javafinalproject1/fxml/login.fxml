@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.login.LoginController">
+
+    <VBox alignment="CENTER" spacing="15" styleClass="vbox-container" maxWidth="350">
+        <Label text="Вход в систему" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        <TextField fx:id="usernameField" promptText="Логин"/>
+        <PasswordField fx:id="passwordField" promptText="Пароль"/>
+        <Button text="Войти" onAction="#handleLogin" prefWidth="200"/>
+        <Hyperlink text="Нет аккаунта? Регистрация" onAction="#goToRegister"/>
+    </VBox>
+
+    <Button text="Выйти из программы" onAction="#exitApp" styleClass="button-exit"/>
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.search.SearchController">
+
+    <VBox spacing="15" styleClass="vbox-container" maxWidth="450">
+        <Label text="Поиск билетов" style="-fx-font-size: 20px; -fx-font-weight: bold;" alignment="CENTER"/>
+
+        <GridPane hgap="10" vgap="10">
+            <Label text="Откуда:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="fromField" promptText="Город отправления" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Куда:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="toField" promptText="Город прибытия" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Дата:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Транспорт:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <ComboBox fx:id="transportType" prefWidth="180" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        </GridPane>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Найти рейсы" onAction="#onSearch"/>
+            <Button text="Мои бронирования" onAction="#viewReservations" style="-fx-background-color: #5856D6;"/>
+            <Button text="Назад" onAction="#goBack" styleClass="button-exit"/>
+        </HBox>
+    </VBox>
+</VBox>

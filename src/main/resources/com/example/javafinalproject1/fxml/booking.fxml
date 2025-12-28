@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.booking.BookingController">
+
+    <VBox spacing="20" styleClass="vbox-container" maxWidth="400" alignment="CENTER">
+        <Label text="Оформление билета" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <TextField fx:id="passengerName" promptText="Введите ФИО пассажира"/>
+        <TextField fx:id="passportId" promptText="Номер паспорта или удостоверения"/>
+
+        <Label fx:id="successLabel" text="" style="-fx-font-weight: bold;"/>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Подтвердить покупку" onAction="#confirmPurchase" style="-fx-background-color: #34C759;"/>
+            <Button text="К поиску" onAction="#goToSearch" style="-fx-background-color: #5856D6;"/>
+            <Button text="Отмена" onAction="#cancel" styleClass="button-exit"/>
+        </HBox>
+    </VBox>
+</VBox>
