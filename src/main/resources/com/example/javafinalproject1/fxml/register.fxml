@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.login.RegisterController">
+
+    <Label text="Система бронирования билетов" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label text="Регистрация нового пользователя" style="-fx-font-size: 16px;"/>
+
+    <VBox spacing="10" alignment="CENTER" maxWidth="200">
+        <TextField fx:id="regUsernameField" promptText="Имя пользователя"/>
+        <PasswordField fx:id="regPasswordField" promptText="Пароль"/>
+    </VBox>
+
+    <Label fx:id="statusLabel" text="" style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Зарегистрироваться" onAction="#handleRegisterClick"/>
+        <Button text="Назад к входу" onAction="#handleBack"/>
+    </HBox>
+
+    <Button text="Выйти из программы" onAction="#handleExit" style="-fx-background-color: #ff4444; -fx-text-fill: white;"/>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="root" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafinalproject1.ui.results.ResultsController">
+
+    <VBox spacing="15" styleClass="vbox-container" maxWidth="500">
+        <Label text="Доступные рейсы" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <ListView fx:id="resultsListView" prefHeight="250"/>
+
+        <HBox spacing="15" alignment="CENTER">
+            <Button text="Выбрать и забронировать" onAction="#goToBooking" style="-fx-background-color: #34C759;"/>
+            <Button text="К поиску" onAction="#goBack"/>
+        </HBox>
+    </VBox>
+</VBox>
